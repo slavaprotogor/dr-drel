@@ -8,7 +8,7 @@ app = FastAPI()
 
 @app.get('/')
 async def index():
-    return {'page': 'index'}
+    return {'page': 'general page'}
 
 
 @app.get('/page/{id}')
