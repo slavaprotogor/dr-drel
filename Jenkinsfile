@@ -7,6 +7,7 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'echo $HOME'
+                sh 'pip --version'
                 echo 'Building...'
                 echo 'Building 1'
                 echo 'Building 2'
@@ -16,6 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'python --version'
+                sh 'pip --version'
                 sh 'echo $HOME'
                 echo 'Testing...'
                 echo 'Testing 1'
@@ -26,6 +28,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'python --version'
+                sh 'pip --version'
                 sh 'echo $HOME'
                 echo 'Deploying...'
                 echo 'Deploying 1'
