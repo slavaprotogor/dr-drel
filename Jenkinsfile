@@ -1,13 +1,16 @@
 pipeline {
     agent {
-        docker { image 'python:3.7-alpine' }
+        docker { 
+            image 'python:3.7-alpine' 
+            args '--user=root'
+        }
     }
     stages {
         stage('Build') {
             steps {
                 sh 'python --version'
                 sh 'echo $HOME'
-                sh 'sudo apk add git'
+                sh 'apk add git'
                 sh 'git --version'
                 echo 'Building...'
                 echo 'Building 1'
