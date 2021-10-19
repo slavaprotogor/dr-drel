@@ -10,8 +10,10 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'echo $HOME'
+                sh 'apk update'
                 sh 'apk add git'
                 sh 'apk add libpq-devel'
+                sh 'apk add --virtual .build-deps gcc python-dev musl-dev postgresql-dev'
                 sh 'cd ~'
                 sh 'rm -rf dr-drel || true'
                 sh 'git clone https://github.com/slavaprotogor/dr-drel.git'
