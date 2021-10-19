@@ -7,7 +7,7 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'echo $HOME'
-                sh 'apk add git'
+                sh 'sudo apk add git'
                 sh 'git --version'
                 echo 'Building...'
                 echo 'Building 1'
