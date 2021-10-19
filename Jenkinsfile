@@ -11,6 +11,7 @@ pipeline {
                 sh 'python --version'
                 sh 'echo $HOME'
                 sh 'apk add git'
+                sh 'mkdir -p /var/www/'
                 sh 'cd /var/www/'
                 sh 'git clone https://github.com/slavaprotogor/dr-drel.git'
                 sh 'cd dr-drel'
