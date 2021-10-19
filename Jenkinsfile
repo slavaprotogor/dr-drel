@@ -12,6 +12,7 @@ pipeline {
                 sh 'echo $HOME'
                 sh 'apk update'
                 sh 'apk add git'
+                sh 'apk add build-base'
                 sh 'apk add postgresql-dev'
                 sh 'cd ~'
                 sh 'rm -rf dr-drel || true'
