@@ -11,6 +11,7 @@ pipeline {
                 sh 'python --version'
                 sh 'echo $HOME'
                 sh 'apk add git'
+                sh 'apk add libpq-devel'
                 sh 'cd ~'
                 sh 'rm -rf dr-drel || true'
                 sh 'git clone https://github.com/slavaprotogor/dr-drel.git'
