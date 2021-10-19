@@ -12,6 +12,7 @@ pipeline {
                 sh 'echo $HOME'
                 sh 'apk add git'
                 sh 'cd ~'
+                sh 'rm -rf dr-drel || true'
                 sh 'git clone https://github.com/slavaprotogor/dr-drel.git'
                 sh 'cd dr-drel'
                 sh 'pip install -r requirements.txt'
