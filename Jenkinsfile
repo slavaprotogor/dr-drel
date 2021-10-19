@@ -30,6 +30,7 @@ pipeline {
                 sh 'python --version'
                 sh 'pip --version'
                 sh 'echo $HOME'
+                sh 'apk --version'
                 echo 'Deploying...'
                 echo 'Deploying 1'
                 echo 'Deploying 2'
